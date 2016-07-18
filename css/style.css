@@ -1,4 +1,49 @@
 @charset "utf-8";
 body {
-	background-color: #f5f3eb;
+	background-color: #66ccff;
 }
+
+table.type1 {
+    border-collapse: collapse;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    font-size: 12px;
+    margin:2em 1em;
+}
+
+table.type1 tr {
+    border-width: 0; 
+    border-style: solid;
+}
+
+table.type1 tr:nth-child(2) td {
+    padding-top: 0.5em;
+}
+
+table.type1 tr:last-child td {
+    padding-bottom: 0.4em;
+}
+
+table.type1 tr:first-child {
+    border-bottom: 4px double black;
+}
+
+table.type1 th {
+    padding: 0.5em;
+}
+
+table.type1 td {
+    padding: 0.2em 0.5em 0.1em 0.5em;
+    white-space: nowrap;
+}
+
+table.type1 td:nth-child(6n+2) {
+    padding-right: 1em;
+    text-align: right;
+}
+
+table.type1 td:nth-child(6n) {
+    padding-right: 1em;
+    text-align: right;
+}
+table_type2.css

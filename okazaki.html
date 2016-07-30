@@ -1,28 +1,39 @@
 <!doctype html>
-
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name"viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE-edge">
 <title>このページは岡崎体育のファンページです</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/okazaki-style.css">
 </head>
+
+
 <body>
+<header>
+<div class='header-contents'>
+<h1>岡崎体育さいこーだよね</h1>
+</div><!-- /.header-contents -->
+</header>
+<div classs='main-img'>
+  <img src = 'https://sociorocketnews.files.wordpress.com/2016/04/okazakit.jpg?w=580&h=295' width = 580 height =295 alt ="">
 
-<h1>"岡崎体育さいこーだよね"</h1>
+</div><!-- /.'main-img-->
 
-<div>
-	<h3>岡崎体育のファンの人たち</h3>
+<div classs='main-wrapper'>
+	<h2>岡崎体育のファンの人たち</h2>
 	<ul id='list'>
 	<li>やぎ（実は岡崎体育が一番好き）</li>
-	<li>ルン氏（もっとも古参ファン。岡崎体育のラジオを聞くのが日記）</li>
+	<li>るん氏（もっとも古参ファン。岡崎体育のラジオを聞くのが日課）</li>
 	<li>まっきー（HISASHIよりもOKAZAKI。超音速デスティニー。）</li>
 	</ul>
-</div>
+</div><!-- /.main-warapper -->
 
-<div>
+
+<div class='chart-js'>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"></script>
-	<h1>Chart.jsでの棒グラフ</h1>
-	<canvas id="myChart" width="400" height="400"></canvas>
+	<h2>岡崎体育への理解・関心</h2>
+	<canvas id="myChart" width="500" height="100"></canvas>
 	<script>
 	var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
@@ -30,7 +41,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ["やぎ", "るん氏", "まっきー"],
         datasets: [{
-            label: 'ファンの熱心さ',
+            label:['興味・関心度'],
             data: [200, 10, 500],
             backgroundColor: [
                 'rgba(255, 99, 132, 1)',
@@ -57,9 +68,8 @@ var myChart = new Chart(ctx, {
 });
 	
 	</script>
-	
-	
-</div>
+</div><!-- /.chart-j -->
+
 <footer>JavaScrip Traning</footer>
 
 </body>
